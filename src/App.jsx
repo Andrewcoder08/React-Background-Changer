@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import imageLogo from '../public/3777-pepecool.png';
+import audioTone from '../public/mixkit-happy-bell-alert-601.mp3';
 import "./App.css";
 
 function App() {
@@ -21,7 +23,7 @@ function App() {
   const buttonStyle = "outline-none px-4 py-1 rounded-full shadow-lg";
 
   const playSound = () => {
-    const audio = new Audio("../src/assets/mixkit-happy-bell-alert-601.mp3");
+    const audio = new Audio(audioTone);
     audio.play();
   };
 
@@ -50,7 +52,7 @@ function App() {
       {/* button container */}
       <div className="image h-screen">
         <img
-          src="../src/assets/3777-pepecool.png"
+          src={imageLogo}
           alt="shaking icon"
           className={shake ? "shake-animation" : ""}
         />
