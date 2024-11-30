@@ -1,0 +1,25 @@
+.fade{
+  transition: background-color 0.5s ease-in;
+}
+
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Shake Animation */
+@keyframes shake {
+  /* x axis, y axis, positive x value, moves towards right, positive y value moves down, negative x value move left and up   */
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-5px, 5px); }
+  50% { transform: translate(5px, -5px); }
+  75% { transform: translate(-5px, -5px); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Apply the animation */
+.shake-animation {
+  animation: shake 0.5s ease-in-out ;
+  
+}
